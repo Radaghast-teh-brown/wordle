@@ -15,7 +15,8 @@ public class wordle {
     public static void main(String[] args) throws FileNotFoundException {
         List<String> file = new ArrayList<>();
         Scanner sc = new Scanner(
-                new FileReader("C:\\Users\\Radagast\\Desktop\\CODIGOS\\Java\\DIO-BOOTCAMP\\words.txt"));
+                new FileReader("C:\\Users\\Radagast\\Desktop\\CODIGOS\\Java\\DIO-BOOTCAMP\\words.txt"));// Add the path
+                                                                                                        // of the file
         String words;
         while (sc.hasNext()) {
             words = sc.next();
@@ -36,6 +37,20 @@ public class wordle {
         System.out.println("----------------------Welcome to the game Wordle-----------------------");
         System.out.println("----You have six chances to guess the missing word with five letters---");
         System.out.println("-----------------------------------------------------------------------");
+
+        for (int i = 1; i <= 6; i++) {
+            Scanner sc1 = new Scanner(System.in);
+            System.out.println("Type your " + i + "° word: ");
+            String enter = sc1.next();
+            if (enter.length() != 5) {
+                System.out.println("Invalid word!");
+                System.out.println("You lost the game!");
+                break;
+            }
+            for(int j = 0; j < 5; j++){
+                if()
+            }
+        }
 
     }
 
