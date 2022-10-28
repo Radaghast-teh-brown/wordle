@@ -11,6 +11,7 @@ public class wordle {
     /*
      * The main purpose of this game is to guess the word according to its letters
      * The user has six chances to guess the hiding word.
+     * Magno Leal
      */
 
     public static void main(String[] args) throws FileNotFoundException {
